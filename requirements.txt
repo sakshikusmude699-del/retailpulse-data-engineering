@@ -1,0 +1,7 @@
+databricks-sql-connector>=4.0
+databricks-sdk>=0.50
+pandas>=2.2
+numpy>=2.0
+faker>=30.0
+python-dotenv>=1.0
+pyyaml>=6.0
