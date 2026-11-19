@@ -51,9 +51,7 @@ class DatabricksConfig:
             if os.environ[name].strip().lower().startswith(PLACEHOLDER_PREFIX)
         ]
         if placeholders:
-            raise ConfigError(
-                f"Placeholder values still set for: {', '.join(placeholders)}."
-            )
+            raise ConfigError(f"Placeholder values still set for: {', '.join(placeholders)}.")
 
         host = os.environ["DATABRICKS_HOST"].strip()
         host = host.removeprefix("https://").removeprefix("http://").rstrip("/")

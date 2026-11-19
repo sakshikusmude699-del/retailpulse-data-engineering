@@ -1,0 +1,15 @@
+# Controls the synthetic retail dataset. Same seed + same settings = identical files.
+seed: 42
+history_start: "2025-01-01"
+history_end: "2026-10-31"
+customer_registration_start: "2023-01-01"
+
+sizes:
+  stores: 30
+  customers: 5000
+  products: 500
+  orders: 30000
+  order_items: 60000
+  payments: 30000
+  inventory: 15000
+  returns: 2000
